@@ -1,0 +1,115 @@
+body {
+    background-color: #1E1E1E;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column; 
+    height: 100vh; 
+    max-width: 100px; 
+    margin: 0 auto; 
+}
+
+.track-div { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    width: 1720px;
+    height: 230px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 15px;
+    vertical-align: middle;
+    transition: box-shadow 0.15s;
+    cursor: pointer;
+}
+
+.track-div:hover {
+    box-shadow: 0px 0px 3px 3px rgba(255, 255, 255,0.3);
+}
+
+.control-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 3;
+    background-color: #383838;
+    width: 400px;
+    height: 40px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-left: 30px;
+    border: none;
+    border-radius: 15px;
+}
+
+.disable-button,
+.start-button,
+.stop-button,
+.load-button {
+    width: 500px;
+    height: 40px;
+    margin: 10px 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.load-button:hover {
+    opacity: 0.7;
+    transition: opacity 0.15s;
+}
+
+.disable-button {
+    background-color: rgba(165, 167, 166, 0.699);
+    transition: background-color 0.7s;  
+} 
+
+
+.load-active-button {
+    background-color: rgb(15, 150, 240);
+   
+}
+
+.stop-button,
+.start-button {
+    background-color: rgba(165, 167, 166, 0.699); 
+}
+
+.start-enable-button {
+    transition: background-color 0.7s;
+    background-color: rgb(14, 192, 14);  
+}
+
+.stop-enable-button {
+    transition: background-color 0.7s;
+    background-color: rgb(240, 38, 38);
+} 
+
+.start-enable-button:hover,
+.stop-enable-button:hover {
+    opacity: 0.7;
+    transition: opacity 0.15s;
+}
+
+.clicked-div-style {
+    border: solid;
+    border-width: 2px;
+    border-color: rgb(14, 192, 14);
+    box-shadow: 0px 0px 3px 3px rgba(255, 255, 255,0.3);
+}
+
+.selected-track {
+    height: 600px;
+    transition: height 0.5s;
+}
+
+.removed-track {
+    opacity: 0;
+    transition: opacity 0.3s;
+}

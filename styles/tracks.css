@@ -1,0 +1,44 @@
+.svg-element-first-track {
+    height: 210px;
+    width: 1700px;
+} 
+
+.svg-element-first-track line{
+    stroke:rgb(0, 0, 0);
+    stroke-width:2;
+}
+
+.svg-element {
+    height: 210px;
+    width: 1700px;
+}
+
+.svg-element line{
+    stroke:rgb(0, 0, 0);
+    stroke-width:2;
+}
+
+.svg-obstcule {
+    fill: rgb(229, 233, 12);
+    /* stroke-width: 1px;
+    stroke: rgb(0,0,0); */
+    width: 40px;
+    height: 100px;
+}
+
+.svg-obstcule-selected {
+    transition:transform 0.5s;
+    transform: translateY(200px)
+}
+
+.svg-obstcule-selected-top-line {
+    transition:transform 0.5s;
+    transform: translateY(85px)
+}
+
+.svg-element-selected {
+    transition: height 0.5s;
+    height: 500px;
+}
+
+

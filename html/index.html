@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pi server</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/tracks.css">
+    <link rel="stylesheet" href="../styles/car.css">
+</head>
+<body>
+    <div class="track-div js-first-track">
+            <svg class="svg-element-first-track">
+                <line x1="0" y1="105" x2="1600" y2="105" />
+                <rect class="svg-car-upper-track svg-car-body" x="0" y="75" rx="10" ry="10"  />
+                <rect class="svg-car-upper-track svg-car-wheel" x="10" y="65"/>    <!-- up left wheel -->
+                <rect class="svg-car-upper-track svg-car-wheel" x="70" y="65"/>    <!-- up right wheel -->
+                <rect class="svg-car-upper-track svg-car-wheel" x="10" y="135"/>   <!-- bottom left wheel -->
+                <rect class="svg-car-upper-track svg-car-wheel" x="70" y="135"/>   <!-- bottom right wheel -->
+            </svg>
+    </div>
+
+    <div class="track-div js-second-track">
+            <svg class="svg-element" >
+                <line x1="0" y1="30%" x2="1600" y2="30%" />
+                <line x1="0" y1="70%" x2="1600" y2="70%" />
+                <rect class="svg-obstcule" x="640" y="100" rx="10" ry="10"/>  
+
+                <rect class="svg-car-middle-track svg-car-body" x="0" y="75" rx="10" ry="10"  />
+                <rect class="svg-car-middle-track svg-car-wheel" x="10" y="65"/>    <!-- up left wheel -->
+                <rect class="svg-car-middle-track svg-car-wheel" x="70" y="65"/>    <!-- up right wheel -->
+                <rect class="svg-car-middle-track svg-car-wheel" x="10" y="135"/>   <!-- bottom left wheel -->
+                <rect class="svg-car-middle-track svg-car-wheel" x="70" y="135"/>   <!-- bottom right wheel -->
+            </svg>
+    </div>
+
+    <div class="track-div js-third-track">
+            <svg class="svg-element" >
+                <line x1="0" y1="30%" x2="1600" y2="30%" />
+                <rect class="svg-obstcule" x="1280" y="15" rx="10" ry="10"/>
+                
+                <line x1="0" y1="70%" x2="1600" y2="70%" />
+                <rect class="svg-obstcule" x="640" y="100" rx="10" ry="10"/>
+
+                <rect class="svg-car-lower-track svg-car-body" x="0" y="75" rx="10" ry="10"  />
+                <rect class="svg-car-lower-track svg-car-body" x="0" y="75" rx="10" ry="10"  />
+                <rect class="svg-car-lower-track svg-car-wheel" x="10" y="65"/>    <!-- up left wheel -->
+                <rect class="svg-car-lower-track svg-car-wheel" x="70" y="65"/>    <!-- up right wheel -->
+                <rect class="svg-car-lower-track svg-car-wheel" x="10" y="135"/>   <!-- bottom left wheel -->
+                <rect class="svg-car-lower-track svg-car-wheel" x="70" y="135"/>   <!-- bottom right wheel -->
+
+            </svg>
+    </div>
+
+    <div class="control-buttons">
+        <button class="load-button load-active-button js-load-button" > Load </button>
+        <button class="start-button js-start-button" > Start </button>
+        <button class="stop-button js-stop-button" disabled> Stop </button>
+    </div>
+    <script src="../scripts/index.js"> </script>
+    <script src="../scripts/control-execution.js"> </script>
+</body>
+</body>
+</html>

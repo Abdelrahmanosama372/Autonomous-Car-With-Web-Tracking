@@ -1,0 +1,23 @@
+.svg-car-upper-track {
+    transform: translate(0px);
+}
+
+.svg-car-middle-track,
+.svg-car-lower-track {
+    transition: transform 0.5s;
+    transform: translateY(40px);
+}
+
+.svg-car-body {
+    fill: rgb(29, 29, 131);
+    border-radius: 100px;
+    /* transform: translate(300px); */
+    width: 100px;
+    height: 60px;
+}
+
+.svg-car-wheel {
+    fill: rgb(0, 0, 0);
+    width: 20px;
+    height: 10px;
+}
